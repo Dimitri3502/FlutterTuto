@@ -16,7 +16,7 @@ class Products extends StatelessWidget {
             (element) => Card(
               child: Column(
                 children: <Widget>[
-                  Image.asset('assets/chocolate.jpg'),
+                  // Image.asset('assets/chocolate.jpg'),
                   Text(element)
                 ],
               ),

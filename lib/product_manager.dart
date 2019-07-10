@@ -42,14 +42,12 @@ void didUpdateWidget(ProductManager oldWidget){
       children: [
         Container(
           margin: EdgeInsets.all(10.0),
-          child: RaisedButton(
-            color: Theme.of(context).primaryColor,
-            onPressed: () {
+          child: TextField(
+            onSubmitted: (String toAdd) {
               setState(() {
-                _products.add('Advanced Food');
+                _products.add(toAdd);
               });
             },
-            child: Text('Add Product'),
           ),
         ),
         Products(_products)
